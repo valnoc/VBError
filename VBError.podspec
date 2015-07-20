@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "VBError"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "VBError is a base class for your own errors."
   s.description      = <<-DESC
                        VBError is a base class for your own errors.
