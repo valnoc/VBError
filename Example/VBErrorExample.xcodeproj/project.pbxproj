@@ -14,6 +14,7 @@
 		5B2A53DE1B5CC35700E22695 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A53DD1B5CC35700E22695 /* Images.xcassets */; };
 		5B2A53E11B5CC35700E22695 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A53DF1B5CC35700E22695 /* LaunchScreen.xib */; };
 		5B2A53ED1B5CC35800E22695 /* VBErrorExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A53EC1B5CC35800E22695 /* VBErrorExampleTests.m */; };
+		5B2A53F91B5CC41500E22695 /* VBError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A53F81B5CC41500E22695 /* VBError.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		5B2A53E61B5CC35800E22695 /* VBErrorExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBErrorExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2A53EB1B5CC35800E22695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B2A53EC1B5CC35800E22695 /* VBErrorExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBErrorExampleTests.m; sourceTree = "<group>"; };
+		5B2A53F71B5CC41500E22695 /* VBError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBError.h; sourceTree = "<group>"; };
+		5B2A53F81B5CC41500E22695 /* VBError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBError.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		5B2A53F61B5CC38A00E22695 /* VBError */ = {
 			isa = PBXGroup;
 			children = (
+				5B2A53F71B5CC41500E22695 /* VBError.h */,
+				5B2A53F81B5CC41500E22695 /* VBError.m */,
 			);
 			name = VBError;
 			path = ../VBError;
@@ -230,6 +235,7 @@
 			files = (
 				5B2A53D91B5CC35700E22695 /* ViewController.m in Sources */,
 				5B2A53D61B5CC35700E22695 /* AppDelegate.m in Sources */,
+				5B2A53F91B5CC41500E22695 /* VBError.m in Sources */,
 				5B2A53D31B5CC35700E22695 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
