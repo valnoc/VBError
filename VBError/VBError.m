@@ -41,4 +41,8 @@
     return [NSBundle mainBundle].bundleIdentifier;
 }
 
++ (NSInteger) code {
+    return 100500;
+}
+
 @end
