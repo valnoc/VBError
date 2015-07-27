@@ -36,6 +36,19 @@
                         userInfo:userInfo];
 }
 
++ (instancetype) errorWithCode:(NSInteger)code {
+    return [self errorWithDomain:[self domain]
+                            code:code
+                        userInfo:nil];
+}
+
++ (instancetype) errorWithCode:(NSInteger)code
+                      userInfo:(NSDictionary*) userInfo {
+    return [self errorWithDomain:[self domain]
+                            code:code
+                        userInfo:userInfo];
+}
+
 #pragma mark - default values
 + (NSString *) domain {
     return [NSBundle mainBundle].bundleIdentifier;
