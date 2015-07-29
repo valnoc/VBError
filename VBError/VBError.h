@@ -30,12 +30,12 @@
  *
  *  Use case 1.
  *  1. Create VBError subclass.
- *  2. Implement domain value.
+ *  2. Implement <i>+domain</i> value.
  *  3. Call <i>+errorWithCode:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
  *
  *  Use case 2
  *  1. Create VBError subclass.
- *  2. Implement domain and code values.
+ *  2. Implement <i>+domain</i> and <i>+code</i> values.
  *  3. Call <i>+error</i>, <i>+errorWithUserInfo:</i> to create an instance.
  *
  */
