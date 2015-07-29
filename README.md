@@ -2,7 +2,10 @@ VBError
 ===========
 
 VBError is a base class for your own errors. It makes error creation and handling more effective.
-When handling error you can check class instead of making domain+code check. You can also create same errors(domain+code) in different parts of code by creating an instance of the same VBError subclass.
+
+When handling error you can check class instead of making domain+code check. 
+
+You can also create same errors(domain+code) in different parts of code by creating an instance of the same VBError subclass.
 
 Use case 1.
 
