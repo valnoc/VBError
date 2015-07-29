@@ -1,12 +1,20 @@
 VBError
 ===========
 
-VBError makes error creation and handling more effective.
+VBError is a base class for your own errors. It makes error creation and handling more effective.
+When handling error you can check class instead of making domain+code check. You can also create same errors(domain+code) in different parts of code by creating an instance of the same VBError subclass.
 
-It can be used as a base class for your own errors. Create VBError subclass. Implement domain and code default values. Call <i>+error</i> or <i>+errorWithUserInfo:</i> to create an instance.
-Using subclassing allows to create errors by short call [VBErrorSubclass error]. When handling error you can only check for class instead of making domain+error check.
+Use case 1.
 
-You can also implement only default domain and call <i>+errorWithCode:</i> or <i>+errorWithCode:userInfo:</i>.
+1. Create VBError subclass.
+2. Implement <i>+domain</i> method.
+3. Call <i>+errorWithCode:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
+
+Use case 2
+
+1. Create VBError subclass.
+2. Implement <i>+domain</i> and <i>+code</i> values.
+3. Call <i>+error</i> or <i>+errorWithUserInfo:</i> to create an instance.
 
 ## How to install
 Use CocoaPods
