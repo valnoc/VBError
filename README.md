@@ -10,14 +10,13 @@ You can also create same errors(domain+code) in different parts of code by creat
 Use case 1.
 
 1. Create VBError subclass.
-2. Implement <i>+domain</i> method.
-3. Call <i>+errorWithCode:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
+2. Call <i>+errorWithCode:</i>, <i>errorWithUserInfo:</i>, <i>+errorWithCode:userInfo:</i> or <i>+errorWithError:</i> to create an instance.
 
 Use case 2
 
 1. Create VBError subclass.
-2. Implement <i>+domain</i> and <i>+code</i> values.
-3. Call <i>+error</i> or <i>+errorWithUserInfo:</i> to create an instance.
+2. Implement <i>+code</i> method.
+3. Call <i>+error</i>, <i>+errorWithUserInfo:</i> to create an instance.
 
 ## How to install
 Use CocoaPods
