@@ -40,7 +40,10 @@
  *
  */
 
-#define kVBError_noCode -100500
+#define kVBError_noCode -1
+
+#define kVBError_userInfo_originalDomain    @"kVBError_userInfo_originalDomain"
+#define kVBError_userInfo_originalCode      @"kVBError_userInfo_originalCode"
 
 @interface VBError : NSError
 
@@ -84,6 +87,19 @@
  */
 + (instancetype) errorWithCode:(NSInteger)code
                       userInfo:(NSDictionary*) userInfo;
+
+/**
+ *  You <b>SHOULD NOT</b> override this method.<br>
+ *  Creates error based on given one. It helps to quickly transform errors from standard frameworks into smth like KeychainError, NetworkError, JSONError, etc <br>
+ *  <b>domain</b> ==    [self domain] <br>
+ *  <b>code</b> ==      [self code] if specified, otherwise = error.code <br>
+ *  <b>userInfo</b> ==  error.userInfo + originalDomain/originalCode keys for error.domain and error.code info <br>
+ *
+ *  @param error Original error.
+ *
+ *  @return An VBError object for domain with the specified error code and the dictionary of arbitrary data userInfo.
+ */
++ (instancetype) errorWithError:(NSError*)error;
 
 #pragma mark - default values
 /**

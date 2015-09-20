@@ -49,6 +49,19 @@
                         userInfo:userInfo];
 }
 
++ (instancetype) errorWithError:(NSError*)error {
+    NSMutableDictionary* userInfo = [NSMutableDictionary new];
+    [userInfo addEntriesFromDictionary:error.userInfo];
+    userInfo[kVBError_userInfo_originalDomain] = error.domain;
+    userInfo[kVBError_userInfo_originalCode] = @(error.code);
+    
+    NSInteger code = [self code] == kVBError_noCode ? error.code : kVBError_noCode;
+    
+    return [self errorWithDomain:[self domain]
+                            code:code
+                        userInfo:userInfo];
+}
+
 #pragma mark - default values
 + (NSString *) domain {
     return [[NSBundle mainBundle].bundleIdentifier stringByAppendingPathComponent:NSStringFromClass(self)];
