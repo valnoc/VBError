@@ -47,7 +47,7 @@
 /**
  *  The main method for error creation.
  *  Calls @code +errorWithUserInfo:nil @endcode
- *  You should NOT override this method.
+ *  You <b>SHOULD NOT</b> override this method.
  *
  *  @return An VBError object for domain with the specified error code.
  */
@@ -55,7 +55,7 @@
 
 /**
  *  Creates error with userInfo using defined domain and code.
- *  You should NOT override this method.
+ *  You <b>SHOULD NOT</b> override this method.
  *
  *  @param userInfo User-defined error information.
  *
@@ -65,7 +65,7 @@
 
 /**
  *  Creates error with code using defined domain and userInfo=nil.
- *  You should NOT override this method.
+ *  You <b>SHOULD NOT</b> override this method.
  *
  *  @param code Error code
  *
@@ -75,7 +75,7 @@
 
 /**
  *  Creates error with code and userInfo using defined domain.
- *  You should NOT override this method.
+ *  You <b>SHOULD NOT</b> override this method.
  *
  *  @param code     Error code
  *  @param userInfo User-defined error information.
@@ -96,7 +96,7 @@
 
 /**
  *  Error code.
- *  This method SHOULD be implemented in subclass.
+ *  This method <b>SHOULD</b> be implemented in subclass.
  *  <br>Default value = kVBError_noCode
  *
  *  @return NSInteger for code.
