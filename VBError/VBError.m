@@ -59,7 +59,7 @@
     
     return [self errorWithDomain:[self domain]
                             code:code
-                        userInfo:userInfo];
+                        userInfo:[NSDictionary dictionaryWithDictionary:userInfo]];
 }
 
 #pragma mark - default values
