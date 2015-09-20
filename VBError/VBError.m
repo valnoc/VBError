@@ -55,7 +55,7 @@
 }
 
 + (NSInteger) code {
-    return 100500;
+    return kVBError_noCode;
 }
 
 @end

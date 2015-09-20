@@ -31,7 +31,7 @@
  *
  *  Use case 1.
  *  1. Create VBError subclass.
- *  2. Call <i>+errorWithCode:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
+ *  2. Call <i>+errorWithCode:</i>, <i>errorWithUserInfo:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
  *
  *  Use case 2
  *  1. Create VBError subclass.
@@ -39,6 +39,9 @@
  *  3. Call <i>+error</i>, <i>+errorWithUserInfo:</i> to create an instance.
  *
  */
+
+#define kVBError_noCode -100500
+
 @interface VBError : NSError
 
 /**
@@ -93,7 +96,8 @@
 
 /**
  *  Error code.
- *  This method MUST be implemented in subclass.
+ *  This method SHOULD be implemented in subclass.
+ *  <br>Default value = kVBError_noCode
  *
  *  @return NSInteger for code.
  */
