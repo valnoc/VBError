@@ -57,9 +57,8 @@
     
     NSInteger code = [self code] == kVBError_noCode ? error.code : kVBError_noCode;
     
-    return [self errorWithDomain:[self domain]
-                            code:code
-                        userInfo:[NSDictionary dictionaryWithDictionary:userInfo]];
+    return [self errorWithCode:code
+                      userInfo:[NSDictionary dictionaryWithDictionary:userInfo]];
 }
 
 #pragma mark - default values
