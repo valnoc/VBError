@@ -31,12 +31,11 @@
  *
  *  Use case 1.
  *  1. Create VBError subclass.
- *  2. Implement <i>+domain</i> value.
- *  3. Call <i>+errorWithCode:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
+ *  2. Call <i>+errorWithCode:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
  *
  *  Use case 2
  *  1. Create VBError subclass.
- *  2. Implement <i>+domain</i> and <i>+code</i> values.
+ *  2. Implement <i>+code</i> method.
  *  3. Call <i>+error</i>, <i>+errorWithUserInfo:</i> to create an instance.
  *
  */
@@ -86,7 +85,7 @@
 #pragma mark - default values
 /**
  *  Error domain. 
- *  Default implementation returns bundleIdentifier. Add your own domain part by calling @code [[super domain] stringByAppendingString:] @endcode
+ *  Default implementation returns <i>bundleIdentifier.className</i>
  *
  *  @return NSSring to be used as error domain.
  */

@@ -51,7 +51,7 @@
 
 #pragma mark - default values
 + (NSString *) domain {
-    return [NSBundle mainBundle].bundleIdentifier;
+    return [[NSBundle mainBundle].bundleIdentifier stringByAppendingPathComponent:NSStringFromClass(self)];
 }
 
 + (NSInteger) code {
