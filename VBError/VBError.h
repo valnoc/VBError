@@ -31,7 +31,7 @@
  *
  *  Use case 1.
  *  1. Create VBError subclass.
- *  2. Call <i>+errorWithCode:</i>, <i>errorWithUserInfo:</i> or <i>+errorWithCode:userInfo:</i> to create an instance.
+ *  2. Call <i>+errorWithCode:</i>, <i>errorWithUserInfo:</i>, <i>+errorWithCode:userInfo:</i> or <i>+errorWithError:</i> to create an instance.
  *
  *  Use case 2
  *  1. Create VBError subclass.
