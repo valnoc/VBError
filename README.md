@@ -1,5 +1,6 @@
 VBError
 ===========
+[![](https://img.shields.io/cocoapods/v/VBError.svg)]()
 
 VBError is a base class for your own errors. It makes error creation and handling more effective.
 
